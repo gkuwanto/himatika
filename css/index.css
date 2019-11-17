@@ -1,0 +1,16 @@
+.main_scroll_custom{
+    overflow-y: scroll;
+    height: 88vh;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+    align-items: center;
+}
+.scroll_custom_table { 
+    overflow-y:scroll !important; 
+    height: 40vh !important;
+}

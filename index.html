@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HIMATIKA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">HIMATIKA</span>
+    </nav>
+    <div class="row" style="margin-right:0">
+        <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                <a class="nav-link" id="v-pills-bendahara-tab" data-toggle="pill" href="#v-pills-bendahara" role="tab" aria-controls="v-pills-bendahara" aria-selected="false">Bendahara</a>
+                <a class="nav-link" id="v-pills-sarpras-tab" data-toggle="pill" href="#v-pills-sarpras" role="tab" aria-controls="v-pills-sarpras" aria-selected="false">Divisi Sarana dan Prasarana</a>
+                <a class="nav-link" id="v-pills-keprof-tab" data-toggle="pill" href="#v-pills-keprof" role="tab" aria-controls="v-pills-keprof" aria-selected="false">Divisi Keprofesian</a>
+                <a class="nav-link" id="v-pills-nondiv-tab" data-toggle="pill" href="#v-pills-nondiv" role="tab" aria-controls="v-pills-nondiv" aria-selected="false">Non Divisi</a>
+            </div>
+        </div>
+        <div class="col-9" style="padding-right: 0;">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div id="home-canvas" class="main_scroll_custom center">
+                        <div id="linechart"></div>
+                        <table class="center">
+                            <tr>
+                                <td><h5 class="center">Pengeluaran</h5><div id="piechart-debit"></div></td>
+                                <td><h5 class="center">Pendapatan</h5><div id="piechart-kredit"></div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-bendahara" role="tabpanel" aria-labelledby="v-pills-bendahara-tab">
+                    <div id="bendahara-canvas" class="main_scroll_custom">
+                        <table class="center">
+                            <tr>
+                                <td><h5 class="center">Pengeluaran</h5><div id="piechart-debit_bendahara"></div></td>
+                                <td><h5 class="center">Pendapatan</h5><div id="piechart-kredit_bendahara"></div></td>
+                            </tr>
+                        </table>
+                        <div class="scroll_custom_table">
+                            <table class="table scroll_custom_table" id="Bendahara">
+                                <tr>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Program</th>
+                                    <th scope="col">PJ</th>
+                                    <th scope="col">Uang</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-sarpras" role="tabpanel" aria-labelledby="v-pills-sarpras-tab">
+                    <div id="sarpras-canvas" class="main_scroll_custom">
+                        <table class="center">
+                            <tr>
+                                <td><h5 class="center">Pengeluaran</h5><div id="piechart-debit_sarpras"></div></td>
+                                <td><h5 class="center">Pendapatan</h5><div id="piechart-kredit_sarpras"></div></td>
+                            </tr>
+                        </table>
+                        <div class="scroll_custom_table">
+                            <table class="table scroll_custom_table" id="Sarana dan Prasarana">
+                                <tr>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Program</th>
+                                    <th scope="col">PJ</th>
+                                    <th scope="col">Uang</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-nondiv" role="tabpanel" aria-labelledby="v-pills-nondiv-tab">
+                    <div id="nondiv-canvas" class="main_scroll_custom">
+                        <table class="center">
+                            <tr>
+                                <td><h5 class="center">Pengeluaran</h5><div id="piechart-debit_non_div"></div></td>
+                                <td><h5 class="center">Pendapatan</h5><div id="piechart-kredit_non_div"></div></td>
+                            </tr>
+                        </table>
+                        <div class="scroll_custom_table">
+                            <table class="table" id="null">
+                                <tr>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Program</th>
+                                    <th scope="col">PJ</th>
+                                    <th scope="col">Uang</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-keprof" role="tabpanel" aria-labelledby="v-pills-keprof-tab">
+                    <div id="keprof-canvas" class="main_scroll_custom">
+                        <table class="center">
+                            <tr>
+                                <td><h5 class="center">Pengeluaran</h5><div id="piechart-debit_keprof"></div></td>
+                                <td><h5 class="center">Pendapatan</h5><div id="piechart-kredit_keprof"></div></td>
+                            </tr>
+                        </table>
+                        <div class="scroll_custom_table">
+                            <table class="table" id="Keprofesian">
+                                <tr>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Program</th>
+                                    <th scope="col">PJ</th>
+                                    <th scope="col">Uang</th>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
