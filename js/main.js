@@ -61,7 +61,7 @@ const drawChart = (array,id) => function() {
   var chart = new google.visualization.PieChart(
     document.getElementById(id));
 
-  var options = { tooltip: { trigger: 'selection' }, width: 375};
+  var options = { tooltip: { trigger: 'selection' }, width: 575};
 
   chart.draw(data, options);
 }
